@@ -4,9 +4,11 @@ import All from "pages/All";
 import Images from "pages/Images";
 import Skills from "pages/Skills";
 import Extracurriculars from "pages/Extracurriculars";
+import Header from "components/Header/Header";
 
 const App = () => (
   <Router>
+    <Header />
     <ul>
       <li>
         <Link to="/">All</Link>
