@@ -7,6 +7,10 @@
     url("../fonts/google-sans-regular.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
