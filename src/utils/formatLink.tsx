@@ -1,4 +1,7 @@
 const formatLink = (link: string) =>
-  link.replace(/^https?:\/\//, "").replaceAll("/", " › ");
+  link
+    .replace(/\/$/, "")
+    .replace(/^https?:\/\//, "")
+    .replaceAll("/", " › ");
 
 export default formatLink;
