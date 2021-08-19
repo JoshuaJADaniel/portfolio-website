@@ -2,8 +2,13 @@ import styles from "./Chip.module.scss";
 
 interface ChipProps {
   text: string;
+  className: string;
 }
 
-const Chip = ({ text }: ChipProps) => <div className={styles.chip}>{text}</div>;
+const Chip = ({ text, className, ...other }: ChipProps) => (
+  <div className={`${styles.chip} ${className}`} {...other}>
+    {text}
+  </div>
+);
 
 export default Chip;
