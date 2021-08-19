@@ -2,7 +2,7 @@ import styles from "./Chip.module.scss";
 
 interface ChipProps {
   text: string;
-  className: string;
+  className?: string;
 }
 
 const Chip = ({ text, className, ...other }: ChipProps) => (
