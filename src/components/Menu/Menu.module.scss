@@ -16,6 +16,10 @@
   color: colors.$textGray;
   font-family: fonts.$specialFontFamily;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .navLinkActive .innerLinkWrapper {

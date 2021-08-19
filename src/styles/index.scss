@@ -41,5 +41,15 @@ p {
 }
 
 b {
-  font-weight: bold !important;
+  font-weight: bold;
+}
+
+a {
+  color: colors.$navy;
+  text-decoration: none;
+  font-family: fonts.$specialFontFamily;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

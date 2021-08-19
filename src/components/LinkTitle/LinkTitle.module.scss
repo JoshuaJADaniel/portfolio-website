@@ -3,21 +3,20 @@
 
 .linkContainer {
   display: block;
-  text-decoration: none;
-  font-family: fonts.$specialFontFamily;
 
   & p {
     color: colors.$textGray;
-    font-size: 1.4rem;
     margin-bottom: 6px;
   }
 
   & h3 {
-    color: colors.$navy;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  &:hover h3 {
-    text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    & h3 {
+      text-decoration: underline;
+    }
   }
 }
