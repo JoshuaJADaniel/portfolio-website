@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  Redirect,
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 import All from "pages/All";
 import Images from "pages/Images";
@@ -36,6 +41,9 @@ const App = () => (
       </Route>
       <Route exact path="/extracurriculars">
         <Extracurriculars />
+      </Route>
+      <Route path="*">
+        <Redirect to="/" />
       </Route>
     </Switch>
   </Router>
