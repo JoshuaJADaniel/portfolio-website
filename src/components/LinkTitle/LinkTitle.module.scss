@@ -1,0 +1,23 @@
+@use "src/styles/colors";
+@use "src/styles/fonts";
+
+.linkContainer {
+  display: block;
+  text-decoration: none;
+  font-family: fonts.$specialFontFamily;
+
+  & p {
+    color: colors.$textGray;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  & h3 {
+    color: colors.$navy;
+    font-size: 1.8rem;
+  }
+
+  &:hover h3 {
+    text-decoration: underline;
+  }
+}

@@ -1,5 +1,5 @@
 import Chip from "components/Chip";
-import formatLink from "utils/formatLink";
+import LinkTitle from "components/LinkTitle";
 import styles from "./ProjectItem.module.scss";
 
 interface ProjectItemProps {
@@ -26,10 +26,7 @@ const ProjectItem = ({
       style={{ backgroundImage: `url(${thumbnail})` }}
     />
     <div>
-      <a href={link} className={styles.linkContainer}>
-        <p>{formatLink(link)}</p>
-        <h3>{title}</h3>
-      </a>
+      <LinkTitle className={styles.linkOverrides} title={title} link={link} />
       <div className={styles.techContainer}>
         {technologies.map((tech) => (
           <Chip className={styles.chipOverrides} text={tech} />

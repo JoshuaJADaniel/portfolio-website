@@ -21,26 +21,6 @@
   background-repeat: no-repeat;
 }
 
-.linkContainer {
-  text-decoration: none;
-  font-family: fonts.$specialFontFamily;
-
-  & p {
-    color: colors.$textGray;
-    font-size: 1.4rem;
-  }
-
-  & h3 {
-    color: colors.$navy;
-    font-size: 1.8rem;
-    margin: 8px 0;
-  }
-
-  &:hover h3 {
-    text-decoration: underline;
-  }
-}
-
 .techContainer {
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +29,8 @@
 
 .chipOverrides {
   margin: 0 8px 8px 0;
+}
+
+.linkOverrides {
+  margin-bottom: 8px;
 }
