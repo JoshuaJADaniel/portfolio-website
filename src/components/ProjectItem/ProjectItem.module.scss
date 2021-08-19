@@ -1,3 +1,4 @@
+@use "src/styles/breaks";
 @use "src/styles/colors";
 @use "src/styles/fonts";
 
@@ -10,8 +11,8 @@
 }
 
 .thumbnail {
-  min-height: 120px;
-  width: 25%;
+  min-height: 160px;
+  width: 35%;
   flex-shrink: 0;
   margin-right: 24px;
 
@@ -33,4 +34,15 @@
 
 .linkOverrides {
   margin-bottom: 8px;
+}
+
+@media (max-width: breaks.$sm) {
+  .container {
+    flex-direction: column;
+  }
+
+  .thumbnail {
+    width: auto;
+    margin: 0 0 16px 0;
+  }
 }
