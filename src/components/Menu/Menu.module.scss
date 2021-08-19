@@ -46,3 +46,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: breaks.$sm) {
+  .navLink {
+    padding: 0 6px;
+  }
+}
