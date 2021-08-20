@@ -1,21 +1,16 @@
 import { useEffect, useState } from "react";
-import FadeIn from "react-fade-in";
 import getResultCountText from "utils/getResultCountText";
 import styles from "./ResultCount.module.scss";
 
 interface ResultCountProps {
   count: number;
+  className?: string;
 }
 
-const ResultCount = ({ count }: ResultCountProps) => {
+const ResultCount = ({ count, className }: ResultCountProps) => {
   const [text, setText] = useState("Loading...");
   useEffect(() => setText(getResultCountText(count)), [count, text]);
-
-  return (
-    <FadeIn>
-      <p className={styles.resultCount}>{text}</p>
-    </FadeIn>
-  );
+  return <p className={`${styles.resultCount} ${className}`}>{text}</p>;
 };
 
 export default ResultCount;

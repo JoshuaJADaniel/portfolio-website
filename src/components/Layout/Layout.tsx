@@ -9,10 +9,10 @@ interface LayoutProps {
 }
 
 const Layout = ({ count, children }: LayoutProps) => (
-  <>
+  <FadeIn className={styles.container}>
     <ResultCount count={count} />
-    <FadeIn className={styles.container}>{children}</FadeIn>
-  </>
+    {children}
+  </FadeIn>
 );
 
 export default Layout;

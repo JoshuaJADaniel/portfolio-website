@@ -6,19 +6,5 @@
 .resultCount {
   color: colors.$textGray;
   font-family: fonts.$specialFontFamily;
-  margin: 16px 0 16px values.$gutterWidth;
-}
-
-@media (max-width: breaks.$lg) {
-  .resultCount {
-    margin-left: values.$marginLg;
-    margin-right: values.$marginLg;
-  }
-}
-
-@media (max-width: breaks.$sm) {
-  .resultCount {
-    margin-left: values.$marginSm;
-    margin-right: values.$marginSm;
-  }
+  margin: 16px 0;
 }
