@@ -1,0 +1,20 @@
+@use "src/styles/values";
+
+.container {
+  width: 100%;
+  height: values.$footerHeight;
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.025);
+
+  p {
+    padding-bottom: 8px;
+  }
+}
