@@ -1,16 +1,12 @@
 @use "src/styles/breaks";
 @use "src/styles/values";
 
-.content {
-  width: values.$contentWidth;
-  margin-left: values.$gutterWidth;
-}
-
 .sidebar {
   position: absolute;
   width: values.$sidebarWidth;
   left: values.$gutterWidth + values.$contentWidth + 40px;
   margin-bottom: 24px;
+  margin-top: 48px;
 }
 
 .sectionSpacer {
@@ -22,19 +18,15 @@
 }
 
 @media (max-width: breaks.$lg) {
-  .content,
   .sidebar {
     width: auto;
     position: static;
-    margin-left: values.$marginLg;
-    margin-right: values.$marginLg;
+    margin: 24px values.$marginLg;
   }
 }
 
 @media (max-width: breaks.$sm) {
-  .content,
   .sidebar {
-    margin-left: values.$marginSm;
-    margin-right: values.$marginSm;
+    margin: 24px values.$marginSm;
   }
 }
