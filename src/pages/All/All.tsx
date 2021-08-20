@@ -25,8 +25,7 @@ const All = () => (
           {...details}
         />
       ))}
-      <div className={styles.sectionSpacer} />
-      <h3>Projects</h3>
+      <h3 className={styles.sectionSpacer}>Projects</h3>
       {projects.map((details) => (
         <ProjectItem
           key={details.title}
