@@ -1,12 +1,3 @@
-@use "src/styles/breaks";
-@use "src/styles/fonts";
-@use "src/styles/values";
-
-.container {
-  width: values.$contentWidth;
-  margin-left: values.$gutterWidth;
-}
-
 .sectionSpacer {
   padding: 24px 0;
 }
@@ -19,19 +10,4 @@
 .chipOverrides {
   margin: 8px 8px 0 0;
   padding: 12px 20px;
-}
-
-@media (max-width: breaks.$lg) {
-  .container {
-    width: auto;
-    margin-left: values.$marginLg;
-    margin-right: values.$marginLg;
-  }
-}
-
-@media (max-width: breaks.$sm) {
-  .container {
-    margin-left: values.$marginSm;
-    margin-right: values.$marginSm;
-  }
 }
