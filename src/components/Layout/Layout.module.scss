@@ -1,0 +1,22 @@
+@use "src/styles/breaks";
+@use "src/styles/values";
+
+.container {
+  width: values.$contentWidth;
+  margin-left: values.$gutterWidth;
+}
+
+@media (max-width: breaks.$lg) {
+  .container {
+    width: auto;
+    margin-left: values.$marginLg;
+    margin-right: values.$marginLg;
+  }
+}
+
+@media (max-width: breaks.$sm) {
+  .container {
+    margin-left: values.$marginSm;
+    margin-right: values.$marginSm;
+  }
+}
