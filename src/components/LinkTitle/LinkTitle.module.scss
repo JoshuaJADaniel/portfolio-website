@@ -4,18 +4,18 @@
 .linkContainer {
   display: block;
 
-  & p {
+  p {
     color: colors.$textGray;
     margin-bottom: 6px;
   }
 
-  & h3 {
+  h3 {
     font-size: 2rem;
   }
 
   &:hover {
     text-decoration: none;
-    & h3 {
+    h3 {
       text-decoration: underline;
     }
   }

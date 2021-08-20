@@ -11,12 +11,12 @@ const Skills = () => {
   skills.forEach(({ items }) => (count += items.length));
 
   return (
-    <main>
+    <>
       <ResultCount count={count} />
       <FadeIn className={styles.container}>
         {skills.map(({ title, items }) => (
           <>
-            <h3 className={styles.sectionTitle}>{title}</h3>
+            <h3>{title}</h3>
             <FadeIn className={styles.chipContainer}>
               {items.map((skill) => (
                 <Chip
@@ -30,7 +30,7 @@ const Skills = () => {
           </>
         ))}
       </FadeIn>
-    </main>
+    </>
   );
 };
 

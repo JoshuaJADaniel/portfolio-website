@@ -12,13 +12,13 @@ import profile from "content/profile";
 import styles from "./All.module.scss";
 
 const All = () => (
-  <main>
+  <>
     <ResultCount count={experiences.length + projects.length} />
     <FadeIn className={styles.sidebar}>
       <KnowledgePanel {...profile} />
     </FadeIn>
     <FadeIn className={styles.content}>
-      <h3 className={styles.sectionTitle}>Experience</h3>
+      <h3>Experience</h3>
       {experiences.map((details) => (
         <WorkItem
           key={details.title}
@@ -27,7 +27,7 @@ const All = () => (
         />
       ))}
       <div className={styles.sectionSpacer} />
-      <h3 className={styles.sectionTitle}>Projects</h3>
+      <h3>Projects</h3>
       {projects.map((details) => (
         <ProjectItem
           key={details.title}
@@ -36,7 +36,7 @@ const All = () => (
         />
       ))}
     </FadeIn>
-  </main>
+  </>
 );
 
 export default All;

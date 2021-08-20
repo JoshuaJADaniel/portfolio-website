@@ -1,7 +1,6 @@
 @use "sass:math";
 @use "src/styles/breaks";
 @use "src/styles/colors";
-@use "src/styles/fonts";
 @use "src/styles/values";
 
 .container {
@@ -55,11 +54,8 @@
   border-radius: 4px;
 
   color: colors.$textWhite;
-  font-family: fonts.$specialFontFamily;
-  font-size: 1.4rem;
 
   &:hover {
-    cursor: default;
     background: colors.$blueHover;
   }
 }
