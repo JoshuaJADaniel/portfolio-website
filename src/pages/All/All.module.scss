@@ -1,0 +1,47 @@
+@use "src/styles/breaks";
+@use "src/styles/colors";
+@use "src/styles/fonts";
+@use "src/styles/values";
+
+.content {
+  width: values.$contentWidth;
+  margin-left: values.$gutterWidth;
+}
+
+.sidebar {
+  position: absolute;
+  width: values.$sidebarWidth;
+  left: values.$gutterWidth + values.$contentWidth + 40px;
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 2.4rem;
+  font-family: fonts.$specialFontFamily;
+}
+
+.sectionSpacer {
+  padding: 12px 0;
+}
+
+.itemOverrides {
+  margin: 12px 0 16px 0;
+}
+
+@media (max-width: breaks.$lg) {
+  .content,
+  .sidebar {
+    width: auto;
+    position: static;
+    margin-left: values.$marginLg;
+    margin-right: values.$marginLg;
+  }
+}
+
+@media (max-width: breaks.$sm) {
+  .content,
+  .sidebar {
+    margin-left: values.$marginSm;
+    margin-right: values.$marginSm;
+  }
+}
