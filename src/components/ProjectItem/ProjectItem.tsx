@@ -29,7 +29,11 @@ const ProjectItem = ({
       <LinkTitle className={styles.linkOverrides} title={title} link={link} />
       <div className={styles.techContainer}>
         {technologies.map((tech) => (
-          <Chip className={styles.chipOverrides} text={tech} />
+          <Chip
+            text={tech}
+            key={`${title} - ${tech}`}
+            className={styles.chipOverrides}
+          />
         ))}
       </div>
       <p>{description}</p>

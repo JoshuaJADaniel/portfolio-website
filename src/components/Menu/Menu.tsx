@@ -14,7 +14,11 @@ const Menu = ({ location: { pathname } }: RouteComponentProps) => (
       const linkStyle = match ? styles.navLinkActive : styles.navLinkInactive;
 
       return (
-        <Link to={item.path} className={`${styles.navLink} ${linkStyle}`}>
+        <Link
+          to={item.path}
+          key={item.text}
+          className={`${styles.navLink} ${linkStyle}`}
+        >
           <div className={styles.innerLinkWrapper}>
             <span className={styles.iconWrapper}>
               {item.icon(Boolean(match))}

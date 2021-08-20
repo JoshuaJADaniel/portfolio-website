@@ -39,7 +39,7 @@ const KnowledgePanel = ({
   <div className={styles.container}>
     <div className={styles.imageContainer}>
       {images.map((image) => (
-        <div style={{ backgroundImage: `url(${image})` }} />
+        <div key={image} style={{ backgroundImage: `url(${image})` }} />
       ))}
     </div>
     <div className={styles.knowledgePanelHeader}>
@@ -50,7 +50,7 @@ const KnowledgePanel = ({
       <p>{description}</p>
       <p className={styles.listInfo}>
         {listInfo.map((item) => (
-          <span>
+          <span key={item.title}>
             <b>{item.title}:</b> {item.info}
           </span>
         ))}
@@ -60,7 +60,12 @@ const KnowledgePanel = ({
       <h3>Profiles</h3>
       <div className={styles.profileInfoWrapper}>
         {profiles.map((profile) => (
-          <a href={profile.link} target="_blank" rel="noreferrer">
+          <a
+            key={profile.title}
+            href={profile.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img alt={profile.title} src={profile.image} />
             <p>{profile.title}</p>
           </a>
@@ -71,7 +76,12 @@ const KnowledgePanel = ({
       <h3>People also search for</h3>
       <div className={styles.similarPeopleWrapper}>
         {similarPeople.map((person) => (
-          <a href={person.link} target="_blank" rel="noreferrer">
+          <a
+            key={person.name}
+            href={person.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <div style={{ backgroundImage: `url(${person.image})` }} />
             <p>{person.name}</p>
           </a>

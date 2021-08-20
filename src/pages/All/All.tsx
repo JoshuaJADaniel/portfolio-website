@@ -20,12 +20,20 @@ const All = () => (
     <FadeIn className={styles.content}>
       <h3 className={styles.sectionTitle}>Experience</h3>
       {experiences.map((details) => (
-        <WorkItem className={styles.itemOverrides} {...details} />
+        <WorkItem
+          key={details.title}
+          className={styles.itemOverrides}
+          {...details}
+        />
       ))}
       <div className={styles.sectionSpacer} />
       <h3 className={styles.sectionTitle}>Projects</h3>
       {projects.map((details) => (
-        <ProjectItem className={styles.itemOverrides} {...details} />
+        <ProjectItem
+          key={details.title}
+          className={styles.itemOverrides}
+          {...details}
+        />
       ))}
     </FadeIn>
   </main>
