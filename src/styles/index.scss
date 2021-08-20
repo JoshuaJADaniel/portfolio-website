@@ -23,6 +23,7 @@ body {
   font-size: 1.6rem;
   font-family: fonts.$defaultFontFamily;
   color: colors.$textDark;
+  overflow-y: scroll;
 }
 
 button,
