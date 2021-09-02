@@ -27,13 +27,19 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
+        stage('Package') {
             steps {
                 script {
-                    echo 'Deploying...'
-                    zip zipFile: 'build.zip', archive: true, dir: 'build'
+                    echo 'Packaging...'
+                    zip zipFile: 'build.zip' dir: 'build'
                 }
             }
+        }
+    }
+
+    post {
+        success {
+            archiveArtifacts artifacts: 'build.zip', fingerprint: true
         }
     }
 }
