@@ -51,7 +51,7 @@ pipeline {
             steps {
                 script {
                     echo 'Packaging...'
-                    zip zipFile: 'build.zip' dir: 'build'
+                    zip zipFile: 'build.zip', dir: 'build'
                 }
             }
         }
