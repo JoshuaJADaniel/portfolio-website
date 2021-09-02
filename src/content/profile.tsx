@@ -24,17 +24,16 @@ const description = (
 const listInfo = [
   {
     title: "Born",
-    info: (
-      <>
-        January 1, 1900, <a href="#">City, Country</a>
-      </>
-    ),
+    info: <>January 24, 2002</>,
   },
   {
     title: "Education",
     info: (
       <>
-        <a href="#">University of City</a> (2020 - Present)
+        <a href="https://www.google.com/search?q=University+of+Toronto">
+          University of Toronto
+        </a>{" "}
+        (2020 - Present)
       </>
     ),
   },
