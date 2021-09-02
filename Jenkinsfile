@@ -6,13 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clean') {
-            steps {
-                script {
-                    sh 'rm -rf $(ls -1 --ignore=node_modules)'
-                }
-            }
-        }
         stage('Build') {
             steps {
                 script {
@@ -38,7 +31,7 @@ pipeline {
             steps {
                 script {
                     echo 'Packaging...'
-                    zip zipFile: 'build.zip', dir: 'build'
+                    zip zipFile: 'build.zip', overwrite: true, dir: 'build'
                 }
             }
         }
