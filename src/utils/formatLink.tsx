@@ -2,6 +2,6 @@ const formatLink = (link: string) =>
   link
     .replace(/\/$/, "")
     .replace(/^https?:\/\//, "")
-    .replaceAll("/", " › ");
+    .replace(/\//g, " › ");
 
 export default formatLink;
