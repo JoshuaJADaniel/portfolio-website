@@ -7,7 +7,9 @@ pipeline {
 
     stages {
         stage('Clean') {
-            sh 'rm -rf $(ls -1 --ignore=node_modules)'
+            steps {
+                sh 'rm -rf $(ls -1 --ignore=node_modules)'
+            }
         }
         stage('Build') {
             steps {
