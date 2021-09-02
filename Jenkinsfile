@@ -1,12 +1,7 @@
 pipeline {
-    agent {
-       docker {
-           image 'node:16-alpine'
-       }
-    }
+    agent any
 
     environment {
-        HOME = '.'
         CI = 'true'
     }
 
@@ -15,8 +10,10 @@ pipeline {
             steps {
                 script {
                     echo 'Building...'
-                    npm install
-                    npm run build
+                    nodejs('node-16.8.0') {
+                        sh 'npm install'
+                        sh 'npm run build'
+                    }
                 }
             }
         }
@@ -24,7 +21,9 @@ pipeline {
             steps {
                 script {
                     echo 'Testing...'
-                    npm test
+                    nodejs('node-16.8.0') {
+                        sh 'npm test'
+                    }
                 }
             }
         }
@@ -32,7 +31,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying...'
-                    zip zipFile: 'build.zip', archive: true, dir: 'build'
+                    // zip zipFile: 'build.zip', archive: true, dir: 'build'
                 }
             }
         }
