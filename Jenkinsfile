@@ -10,10 +10,8 @@ pipeline {
             steps {
                 script {
                     echo 'Building...'
-                    nodejs('node-16.8.0') {
-                        sh 'npm install'
-                        sh 'npm run build'
-                    }
+                    sh 'npm install'
+                    sh 'npm run build'
                 }
             }
         }
@@ -21,9 +19,7 @@ pipeline {
             steps {
                 script {
                     echo 'Testing...'
-                    nodejs('node-16.8.0') {
-                        sh 'npm test'
-                    }
+                    sh 'npm test'
                 }
             }
         }
