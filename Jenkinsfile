@@ -5,20 +5,26 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                npm install
-                npm run build
+                script {
+                    npm install
+                    npm run build
+                }
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                npm test
+                script {
+                    npm test
+                }
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                zip zipFile: 'build.zip', archive: true, dir: 'build'
+                script {
+                    zip zipFile: 'build.zip', archive: true, dir: 'build'
+                }
             }
         }
     }
