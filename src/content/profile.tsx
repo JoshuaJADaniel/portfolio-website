@@ -47,12 +47,12 @@ const profiles = [
   {
     title: "LinkedIn",
     image: linkedinLogo,
-    link: "https://linkedin.com/in/user",
+    link: "https://linkedin.com/in/joshuajadaniel",
   },
   {
     title: "GitHub",
     image: githubLogo,
-    link: "https://github.com/user",
+    link: "https://github.com/joshuajadaniel",
   },
 ];
 
