@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying...'
-                    // zip zipFile: 'build.zip', archive: true, dir: 'build'
+                    zip zipFile: 'build.zip', archive: true, dir: 'build'
                 }
             }
         }
