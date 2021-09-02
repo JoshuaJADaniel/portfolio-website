@@ -5,7 +5,25 @@ pipeline {
         CI = 'true'
     }
 
+    options {
+        skipDefaultCheckout()
+    }
+
     stages {
+        stage('Clean') {
+            steps {
+                script {
+                    sh 'rm -rf $(ls -1 --ignore=node_modules)'
+                }
+            }
+        }
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
         stage('Build') {
             steps {
                 script {
@@ -17,6 +35,7 @@ pipeline {
                 }
             }
         }
+
         stage('Test') {
             steps {
                 script {
@@ -27,11 +46,12 @@ pipeline {
                 }
             }
         }
+
         stage('Package') {
             steps {
                 script {
                     echo 'Packaging...'
-                    zip zipFile: 'build.zip', overwrite: true, dir: 'build'
+                    zip zipFile: 'build.zip' dir: 'build'
                 }
             }
         }
