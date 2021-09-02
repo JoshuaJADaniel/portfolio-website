@@ -13,8 +13,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
                 script {
+                    echo 'Building...'
                     npm install
                     npm run build
                 }
@@ -22,16 +22,16 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
                 script {
+                    echo 'Testing...'
                     npm test
                 }
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
                 script {
+                    echo 'Deploying...'
                     zip zipFile: 'build.zip', archive: true, dir: 'build'
                 }
             }
