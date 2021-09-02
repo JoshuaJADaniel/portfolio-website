@@ -1,5 +1,14 @@
 pipeline {
-    agent any
+    agent {
+       docker {
+           image 'node'
+       }
+    }
+
+    environment {
+        HOME = '.'
+        CI = 'true'
+    }
 
     stages {
         stage('Build') {
