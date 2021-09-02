@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import All from "pages/All";
-import Images from "pages/Images";
 import Skills from "pages/Skills";
 import Extracurriculars from "pages/Extracurriculars";
 
@@ -22,9 +21,6 @@ const App = () => (
       <Switch>
         <Route exact path="/">
           <All />
-        </Route>
-        <Route exact path="/images">
-          <Images />
         </Route>
         <Route exact path="/skills">
           <Skills />
