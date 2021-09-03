@@ -79,7 +79,7 @@ const similarPeople = [
   },
 ];
 
-const profile = {
+const knowledgePanelInfo = {
   name: "Joshua Daniel",
   title: "Software Engineer",
 
@@ -90,4 +90,4 @@ const profile = {
   similarPeople,
 };
 
-export default profile;
+export default knowledgePanelInfo;

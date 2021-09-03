@@ -7,14 +7,14 @@ import Layout from "components/Layout";
 
 import experiences from "content/experiences";
 import projects from "content/projects";
-import profile from "content/profile";
+import knowledgePanelInfo from "content/knowledgePanelInfo";
 
 import styles from "./All.module.scss";
 
 const All = () => (
   <>
     <FadeIn className={styles.sidebar}>
-      <KnowledgePanel {...profile} />
+      <KnowledgePanel {...knowledgePanelInfo} />
     </FadeIn>
     <Layout count={experiences.length + projects.length}>
       <h3>Experience</h3>
