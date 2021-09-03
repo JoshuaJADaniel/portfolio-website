@@ -1,4 +1,4 @@
-const extracurriculars = [
+const activities = [
   {
     title: "Microsoft Certified: Azure Cloud AZ-900",
     link: "https://www.credly.com/badges/6bdb5c6f-e5f7-4a46-a0a2-f13912cddd1f",
@@ -50,4 +50,4 @@ const extracurriculars = [
   },
 ];
 
-export default extracurriculars;
+export default activities;

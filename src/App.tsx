@@ -8,7 +8,7 @@ import {
 import All from "pages/All";
 import Skills from "pages/Skills";
 import Projects from "pages/Projects";
-import Extracurriculars from "pages/Extracurriculars";
+import Activities from "pages/Activities";
 
 import Menu from "components/Menu";
 import Header from "components/Header";
@@ -29,8 +29,8 @@ const App = () => (
         <Route exact path="/projects">
           <Projects />
         </Route>
-        <Route exact path="/extracurriculars">
-          <Extracurriculars />
+        <Route exact path="/activities">
+          <Activities />
         </Route>
         <Route path="*">
           <Redirect to="/" />

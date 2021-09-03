@@ -40,7 +40,7 @@ const ProjectsIcon = (active: boolean) =>
     </svg>
   );
 
-const ExtracurricularsIcon = (active: boolean) =>
+const ActivitiesIcon = (active: boolean) =>
   active ? (
     <svg viewBox="0 0 24 24">
       <path fill="#fbbc04" d="M6 20v-8H4v8c0 1.1.9 2 2 2h6v-2H6" />
@@ -54,4 +54,4 @@ const ExtracurricularsIcon = (active: boolean) =>
     </svg>
   );
 
-export { AllIcon, SkillsIcon, ProjectsIcon, ExtracurricularsIcon };
+export { AllIcon, SkillsIcon, ProjectsIcon, ActivitiesIcon};
