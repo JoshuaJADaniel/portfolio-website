@@ -7,6 +7,7 @@ import {
 
 import All from "pages/All";
 import Skills from "pages/Skills";
+import Projects from "pages/Projects";
 import Extracurriculars from "pages/Extracurriculars";
 
 import Menu from "components/Menu";
@@ -24,6 +25,9 @@ const App = () => (
         </Route>
         <Route exact path="/skills">
           <Skills />
+        </Route>
+        <Route exact path="/projects">
+          <Projects />
         </Route>
         <Route exact path="/extracurriculars">
           <Extracurriculars />
