@@ -1,8 +1,15 @@
-const experiences = Array(1).fill({
-  title: "Lorem Ipsum Dolor",
-  link: "https://example.com/work/experience/",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisi a velit malesuada pulvinar quis eu mauris. In sed ultrices ex, suscipit pharetra mi. Nunc in nisl odio. Proin auctor dolor id elementum aliquet.",
-});
+const experiences = [
+  {
+    title: "Freelance Software Developer, Overflow Cafe",
+    link: "https://overflowcafe.com",
+    description: (
+      <>
+        Developed and designed in excess of a dozen client websites using PHP,
+        JavaScript along with HTML5/CSS3. Reduced Overflow’s dashboard load time
+        by 82% by refactoring MySQL data access methods and...
+      </>
+    ),
+  },
+];
 
 export default experiences;
