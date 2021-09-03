@@ -4,24 +4,29 @@ const skills = [
     items: [
       "Java",
       "JavaScript",
+      "C",
       "PHP",
       "Python",
-      "ReactJS",
+      "Bash",
       "jQuery",
-      "C",
       "C#",
       "HTML5",
       "CSS3",
-      "Sass/SCSS",
+      "SCSS",
     ],
   },
   {
-    title: "Database",
-    items: ["A", "B", "C"],
+    title: "Libraries and Frameworks",
+    items: ["TypeScript", "React.js", "Redux", "Spring"],
+  },
+
+  {
+    title: "Databases",
+    items: ["SQL", "NoSQL", "MySQL", "MongoDB", "Firebase"],
   },
   {
     title: "Tools and Technologies",
-    items: ["A", "B", "C"],
+    items: ["Git", "Docker", "Jenkins", "Azure Cloud", "Linux", "Windows"],
   },
 ];
 
