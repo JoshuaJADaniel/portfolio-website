@@ -16,10 +16,9 @@ const images: [string, string, string] = [
 
 const description = (
   <>
-    In vel congue ipsum. <b>Nulla risus</b> massa, eleifend a arcu ac, malesuada
-    congue massa. Vivamus sed interdum massa. Sed congue neque id diam volutpat,
-    cursus pharetra odio luctus. Aenean at <b>condimentum</b> risus, sit amet
-    facilisis enim.
+    Joshua Daniel is a second-year student at the University of Toronto studying
+    Computer Science. He is a software engineer who is always expanding his
+    knowledge in the field through work, school, and side projects.
   </>
 );
 
