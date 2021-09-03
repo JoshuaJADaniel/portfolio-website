@@ -80,7 +80,7 @@ const similarPeople = [
 ];
 
 const profile = {
-  name: "Full Name",
+  name: "Joshua Daniel",
   title: "Software Engineer",
 
   images,
