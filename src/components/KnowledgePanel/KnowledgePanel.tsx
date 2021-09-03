@@ -1,3 +1,4 @@
+import ExternalLink from "components/ExternalLink";
 import styles from "./KnowledgePanel.module.scss";
 
 interface InfoItem {
@@ -60,15 +61,10 @@ const KnowledgePanel = ({
       <h3>Profiles</h3>
       <div className={styles.profileInfoWrapper}>
         {socialProfiles.map((socialProfile) => (
-          <a
-            key={socialProfile.title}
-            href={socialProfile.link}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <ExternalLink key={socialProfile.title} link={socialProfile.link}>
             <img alt={socialProfile.title} src={socialProfile.image} />
             <p>{socialProfile.title}</p>
-          </a>
+          </ExternalLink>
         ))}
       </div>
     </div>
@@ -76,15 +72,10 @@ const KnowledgePanel = ({
       <h3>People also search for</h3>
       <div className={styles.similarPeopleWrapper}>
         {similarPeople.map((similarPerson) => (
-          <a
-            key={similarPerson.name}
-            href={similarPerson.link}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <ExternalLink key={similarPerson.name} link={similarPerson.link}>
             <div style={{ backgroundImage: `url(${similarPerson.image})` }} />
             <p>{similarPerson.name}</p>
-          </a>
+          </ExternalLink>
         ))}
       </div>
     </div>

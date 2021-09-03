@@ -1,4 +1,5 @@
 import formatLink from "utils/formatLink";
+import ExternalLink from "components/ExternalLink";
 import styles from "./LinkTitle.module.scss";
 
 interface LinkTitleProps {
@@ -8,16 +9,14 @@ interface LinkTitleProps {
 }
 
 const LinkTitle = ({ title, link, className, ...other }: LinkTitleProps) => (
-  <a
-    href={link}
+  <ExternalLink
+    link={link}
     className={`${styles.linkContainer} ${className}`}
-    rel="noreferrer"
-    target="_blank"
     {...other}
   >
     <p>{formatLink(link)}</p>
     <h3>{title}</h3>
-  </a>
+  </ExternalLink>
 );
 
 export default LinkTitle;
