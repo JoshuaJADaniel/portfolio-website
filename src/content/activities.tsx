@@ -1,8 +1,13 @@
+import azureThumbnail from "images/azure-thumbnail.jpg";
+import picoctfThumbnail from "images/picoctf-thumbnail.jpg";
+import uoitThumbnail from "images/uoit-thumbnail.jpg";
+import hlssThumnail from "images/hlss-thumbnail.jpg";
+
 const activities = [
   {
     title: "Microsoft Certified: Azure Cloud AZ-900",
     link: "https://www.credly.com/badges/6bdb5c6f-e5f7-4a46-a0a2-f13912cddd1f",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: azureThumbnail,
     technologies: ["Cloud", "Pipelines", "DevOps", "Containers"],
     description: (
       <>
@@ -14,7 +19,7 @@ const activities = [
   {
     title: "Carnegie Mellon: picoCTF Hackathon",
     link: "https://picoctf.org/about",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: picoctfThumbnail,
     technologies: ["C", "C++", "SQL", "Bash", "Python"],
     description: (
       <>
@@ -27,7 +32,7 @@ const activities = [
   {
     title: "UOIT: Engineering Robotics Competition",
     link: "https://engineering.ontariotechu.ca",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: uoitThumbnail,
     technologies: ["EV3", "RBT"],
     description: (
       <>
@@ -39,7 +44,7 @@ const activities = [
   {
     title: "HLSS: Lead Senior Mathematics Tutor",
     link: "https://www.peelschools.org/schools/heartlake",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: hlssThumnail,
     technologies: ["Calculus", "Linear Algebra", "Advanced Functions"],
     description: (
       <>

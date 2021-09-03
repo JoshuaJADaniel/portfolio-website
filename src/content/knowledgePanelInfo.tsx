@@ -8,10 +8,14 @@ import keanuReeves from "images/keanu-reeves-headshot.png";
 import morganFreeman from "images/morgan-freeman-headshot.png";
 import robertDowneyJr from "images/robert-downey-jr-headshot.png";
 
+import uoftThumbnail from "images/uoft-thumbnail.jpg";
+import torontoThumbnail from "images/toronto-thumbnail.jpg";
+import headshot from "images/knowledge-panel-headshot.jpg";
+
 const images: [string, string, string] = [
-  "https://dummyimage.com/600x400/000be0/fff",
-  "https://dummyimage.com/600x400/000be0/fff",
-  "https://dummyimage.com/600x400/000be0/fff",
+  headshot,
+  uoftThumbnail,
+  torontoThumbnail,
 ];
 
 const description = (

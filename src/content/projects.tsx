@@ -1,8 +1,14 @@
+import thumbnailMedicalClinicApp from "images/thumbnail-medical-clinic-app.jpg";
+import imageRepositoryThumbnail from "images/image-repository-thumbnail.jpg";
+import cursorluxThumbnail from "images/cursorlux-thumbnail.jpg";
+import portfolioThumbnail from "images/portfolio-thumbnail.jpg";
+import videoverseThumbnail from "images/videoverse-thumbnail.jpg";
+
 const projects = [
   {
     title: "Medical Clinic App",
     link: "https://github.com/joshuajadaniel/medical-clinic-app",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: thumbnailMedicalClinicApp,
     technologies: ["Java", "NoSQL", "Firebase", "Mockito", "JUnit"],
     description: (
       <>
@@ -14,7 +20,7 @@ const projects = [
   {
     title: "Image Repository",
     link: "https://github.com/joshuajadaniel/image-repository",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: imageRepositoryThumbnail,
     technologies: ["PHP", "MySQL", "React.js", "JWT"],
     description: (
       <>
@@ -26,7 +32,7 @@ const projects = [
   {
     title: "Cursorlux",
     link: "https://github.com/joshuajadaniel/cursorlux",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: cursorluxThumbnail,
     technologies: ["JavaScript", "React.js", "Redux", "Jest", "RTL"],
     description: (
       <>
@@ -38,7 +44,7 @@ const projects = [
   {
     title: "Google Search",
     link: "https://github.com/joshuajadaniel/portfolio-website",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: portfolioThumbnail,
     technologies: ["TypeScript", "Docker", "Jenkins", "React.js"],
     description: (
       <>
@@ -50,7 +56,7 @@ const projects = [
   {
     title: "Videoverse",
     link: "https://github.com/joshuajadaniel/videoverse",
-    thumbnail: "https://dummyimage.com/600x400/000be0/fff",
+    thumbnail: videoverseThumbnail,
     technologies: ["React.js", "Sass/SCSS", "Axios"],
     description: (
       <>
