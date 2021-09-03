@@ -5,13 +5,13 @@ interface InfoItem {
   info: string | JSX.Element;
 }
 
-interface ProfileItem {
+interface SocialProfileItem {
   title: string;
   link: string;
   image: string;
 }
 
-interface SimilarItem {
+interface SimilarPersonItem {
   name: string;
   link: string;
   image: string;
@@ -20,20 +20,20 @@ interface SimilarItem {
 interface KnowledgePanelProps {
   name: string;
   title: string;
-  listInfo: InfoItem[];
+  infoList: InfoItem[];
   images: [string, string, string];
   description: string | JSX.Element;
-  profiles: ProfileItem[];
-  similarPeople: SimilarItem[];
+  socialProfiles: SocialProfileItem[];
+  similarPeople: SimilarPersonItem[];
 }
 
 const KnowledgePanel = ({
   name,
   title,
   images,
-  listInfo,
+  infoList,
   description,
-  profiles,
+  socialProfiles,
   similarPeople,
 }: KnowledgePanelProps) => (
   <div className={styles.container}>
@@ -49,7 +49,7 @@ const KnowledgePanel = ({
     <div className={styles.knowledgeSection}>
       <p>{description}</p>
       <p className={styles.listInfo}>
-        {listInfo.map((item) => (
+        {infoList.map((item) => (
           <span key={item.title}>
             <b>{item.title}:</b> {item.info}
           </span>
@@ -59,15 +59,15 @@ const KnowledgePanel = ({
     <div className={styles.knowledgeSection}>
       <h3>Profiles</h3>
       <div className={styles.profileInfoWrapper}>
-        {profiles.map((profile) => (
+        {socialProfiles.map((socialProfile) => (
           <a
-            key={profile.title}
-            href={profile.link}
+            key={socialProfile.title}
+            href={socialProfile.link}
             target="_blank"
             rel="noreferrer"
           >
-            <img alt={profile.title} src={profile.image} />
-            <p>{profile.title}</p>
+            <img alt={socialProfile.title} src={socialProfile.image} />
+            <p>{socialProfile.title}</p>
           </a>
         ))}
       </div>
@@ -75,15 +75,15 @@ const KnowledgePanel = ({
     <div className={styles.knowledgeSection}>
       <h3>People also search for</h3>
       <div className={styles.similarPeopleWrapper}>
-        {similarPeople.map((person) => (
+        {similarPeople.map((similarPerson) => (
           <a
-            key={person.name}
-            href={person.link}
+            key={similarPerson.name}
+            href={similarPerson.link}
             target="_blank"
             rel="noreferrer"
           >
-            <div style={{ backgroundImage: `url(${person.image})` }} />
-            <p>{person.name}</p>
+            <div style={{ backgroundImage: `url(${similarPerson.image})` }} />
+            <p>{similarPerson.name}</p>
           </a>
         ))}
       </div>

@@ -21,7 +21,7 @@ const description = (
   </>
 );
 
-const listInfo = [
+const infoList = [
   {
     title: "Born",
     info: <>January 24, 2002</>,
@@ -43,7 +43,7 @@ const listInfo = [
   },
 ];
 
-const profiles = [
+const socialProfiles = [
   {
     title: "LinkedIn",
     image: linkedinLogo,
@@ -84,9 +84,9 @@ const profile = {
   title: "Software Engineer",
 
   images,
-  listInfo,
+  infoList,
   description,
-  profiles,
+  socialProfiles,
   similarPeople,
 };
 
