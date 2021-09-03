@@ -4,7 +4,7 @@ import styles from "./WorkItem.module.scss";
 interface WorkItemProps {
   link: string;
   title: string;
-  description: string;
+  description: string | JSX.Element;
   className?: string;
 }
 

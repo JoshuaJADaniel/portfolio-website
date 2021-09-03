@@ -5,9 +5,9 @@ import styles from "./ProjectItem.module.scss";
 interface ProjectItemProps {
   title: string;
   link: string;
-  technologies: string[];
-  description: string;
   thumbnail: string;
+  technologies: string[];
+  description: string | JSX.Element;
   className?: string;
 }
 
