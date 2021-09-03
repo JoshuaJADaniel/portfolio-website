@@ -1,3 +1,5 @@
+import getGoogleSearchLink from "utils/getGoogleSearchLink";
+
 import githubLogo from "images/github-logo.png";
 import linkedinLogo from "images/linkedin-logo.png";
 
@@ -25,6 +27,10 @@ const infoList = [
   {
     title: "Born",
     info: <>January 24, 2002</>,
+  },
+  {
+    title: "Location",
+    info: <a href={getGoogleSearchLink("Toronto")}>Toronto, Canada</a>,
   },
   {
     title: "Education",
