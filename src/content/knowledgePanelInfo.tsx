@@ -36,7 +36,7 @@ const infoList = [
     title: "Education",
     info: (
       <>
-        <a href="https://www.google.com/search?q=University+of+Toronto">
+        <a href={getGoogleSearchLink("University of Toronto")}>
           University of Toronto
         </a>{" "}
         (2020 - Present)
@@ -65,22 +65,22 @@ const socialProfiles = [
 const similarPeople = [
   {
     name: "Keanu Reeves",
-    link: "https://www.google.com/search?q=Keanu+Reeves",
+    link: getGoogleSearchLink("Keanu Reeves"),
     image: keanuReeves,
   },
   {
     name: "Morgan Freeman",
-    link: "https://www.google.com/search?q=Morgan+Freeman",
+    link: getGoogleSearchLink("Morgan Freeman"),
     image: morganFreeman,
   },
   {
     name: "Bill Gates",
-    link: "https://www.google.com/search?q=Bill+Gates",
+    link: getGoogleSearchLink("Bill Gates"),
     image: billGates,
   },
   {
     name: "Robert Downey Jr.",
-    link: "https://www.google.com/search?q=Robert+Downey+Jr.",
+    link: getGoogleSearchLink("Robert Downey Jr."),
     image: robertDowneyJr,
   },
 ];
