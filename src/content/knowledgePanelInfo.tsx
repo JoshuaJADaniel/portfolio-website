@@ -1,16 +1,16 @@
 import getGoogleSearchLink from "utils/getGoogleSearchLink";
 
-import githubLogo from "images/github-logo.png";
-import linkedinLogo from "images/linkedin-logo.png";
+import githubLogo from "images/logos/github.png";
+import linkedinLogo from "images/logos/linkedin.png";
 
-import billGates from "images/bill-gates-headshot.png";
-import keanuReeves from "images/keanu-reeves-headshot.png";
-import morganFreeman from "images/morgan-freeman-headshot.png";
-import robertDowneyJr from "images/robert-downey-jr-headshot.png";
+import billGates from "images/headshots/bill-gates.png";
+import keanuReeves from "images/headshots/keanu-reeves.png";
+import morganFreeman from "images/headshots/morgan-freeman.png";
+import robertDowneyJr from "images/headshots/robert-downey-jr.png";
 
-import uoftThumbnail from "images/uoft-thumbnail.jpg";
-import torontoThumbnail from "images/toronto-thumbnail.jpg";
-import headshot from "images/knowledge-panel-headshot.jpg";
+import uoftThumbnail from "images/thumbnails/other/uoft.jpg";
+import torontoThumbnail from "images/thumbnails/other/toronto.jpg";
+import headshot from "images/headshots/personal.jpg";
 
 const images: [string, string, string] = [
   headshot,

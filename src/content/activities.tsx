@@ -1,7 +1,7 @@
-import azureThumbnail from "images/azure-thumbnail.jpg";
-import picoctfThumbnail from "images/picoctf-thumbnail.jpg";
-import uoitThumbnail from "images/uoit-thumbnail.jpg";
-import hlssThumnail from "images/hlss-thumbnail.jpg";
+import azureThumbnail from "images/thumbnails/activities/azure.jpg";
+import picoctfThumbnail from "images/thumbnails/activities/picoctf.jpg";
+import uoitThumbnail from "images/thumbnails/activities/uoit-thumbnail.jpg";
+import hlssThumnail from "images/thumbnails/activities/hlss.jpg";
 
 const activities = [
   {

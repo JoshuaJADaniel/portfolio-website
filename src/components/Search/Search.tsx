@@ -1,5 +1,5 @@
-import imgSearch from "images/search.svg";
-import imgMic from "images/microphone.svg";
+import imgSearch from "images/icons/search.svg";
+import imgMic from "images/icons/microphone.svg";
 import styles from "./Search.module.scss";
 
 const Search = () => (

@@ -1,8 +1,8 @@
-import thumbnailMedicalClinicApp from "images/thumbnail-medical-clinic-app.jpg";
-import imageRepositoryThumbnail from "images/image-repository-thumbnail.jpg";
-import cursorluxThumbnail from "images/cursorlux-thumbnail.jpg";
-import portfolioThumbnail from "images/portfolio-thumbnail.jpg";
-import videoverseThumbnail from "images/videoverse-thumbnail.jpg";
+import thumbnailMedicalClinicApp from "images/thumbnails/projects/medical-clinic-app.jpg";
+import imageRepositoryThumbnail from "images/thumbnails/projects/image-repository.jpg";
+import cursorluxThumbnail from "images/thumbnails/projects/cursorlux.jpg";
+import portfolioThumbnail from "images/thumbnails/projects/portfolio.jpg";
+import videoverseThumbnail from "images/thumbnails/projects/videoverse.jpg";
 
 const projects = [
   {

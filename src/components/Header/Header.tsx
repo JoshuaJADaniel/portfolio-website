@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 import Search from "components/Search";
 
-import imgMenu from "images/header-menu-icon.svg";
-import imgLogo from "images/google-logo.svg";
+import imgMenu from "images/icons/menu.svg";
+import imgLogo from "images/logos/google.svg";
 import styles from "./Header.module.scss";
 
 const Header = () => (
