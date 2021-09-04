@@ -31,7 +31,7 @@ const ProjectItem = ({
         {technologies.map((tech) => (
           <Chip
             text={tech}
-            key={`${title} - ${tech}`}
+            key={`${title}-${tech}`}
             className={styles.chipOverrides}
           />
         ))}

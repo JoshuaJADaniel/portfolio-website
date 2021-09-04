@@ -1,3 +1,5 @@
+import React from "react";
+
 import FadeIn from "react-fade-in";
 import Layout from "components/Layout";
 import Chip from "components/Chip";
@@ -12,15 +14,19 @@ const Skills = () => {
   return (
     <Layout count={count}>
       {skills.map(({ title, items }) => (
-        <>
+        <React.Fragment key={`skills-page-${title}`}>
           <h3>{title}</h3>
           <FadeIn className={styles.chipContainer}>
             {items.map((skill) => (
-              <Chip key={skill} text={skill} className={styles.chipOverrides} />
+              <Chip
+                text={skill}
+                key={`skills-page-${skill}`}
+                className={styles.chipOverrides}
+              />
             ))}
           </FadeIn>
           <div className={styles.sectionSpacer} />
-        </>
+        </React.Fragment>
       ))}
     </Layout>
   );

@@ -16,7 +16,7 @@ const Menu = ({ location: { pathname } }: RouteComponentProps) => (
       return (
         <Link
           to={item.path}
-          key={item.text}
+          key={`menu-${item.text}`}
           className={`${styles.navLink} ${linkStyle}`}
         >
           <div className={styles.innerLinkWrapper}>

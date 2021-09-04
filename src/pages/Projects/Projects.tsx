@@ -7,7 +7,7 @@ const Projects = () => (
   <Layout count={projects.length}>
     {projects.map((details) => (
       <ProjectItem
-        key={details.title}
+        key={`project-page-${details.title}`}
         className={styles.itemOverrides}
         {...details}
       />

@@ -20,7 +20,7 @@ const All = () => (
       <h3>Experience</h3>
       {experiences.map((details) => (
         <WorkItem
-          key={details.title}
+          key={`all-page-${details.title}`}
           className={styles.itemOverrides}
           {...details}
         />
@@ -28,7 +28,7 @@ const All = () => (
       <h3 className={styles.sectionSpacer}>Projects</h3>
       {projects.map((details) => (
         <ProjectItem
-          key={details.title}
+          key={`all-page-${details.title}`}
           className={styles.itemOverrides}
           {...details}
         />

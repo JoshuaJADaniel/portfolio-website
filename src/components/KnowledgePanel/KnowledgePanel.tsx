@@ -51,7 +51,7 @@ const KnowledgePanel = ({
       <p>{description}</p>
       <p className={styles.listInfo}>
         {infoList.map((item) => (
-          <span key={item.title}>
+          <span key={`info-${item.title}`}>
             <b>{item.title}:</b> {item.info}
           </span>
         ))}
@@ -61,7 +61,10 @@ const KnowledgePanel = ({
       <h3>Profiles</h3>
       <div className={styles.profileInfoWrapper}>
         {socialProfiles.map((socialProfile) => (
-          <ExternalLink key={socialProfile.title} link={socialProfile.link}>
+          <ExternalLink
+            link={socialProfile.link}
+            key={`social-profile-${socialProfile.title}`}
+          >
             <img alt={socialProfile.title} src={socialProfile.image} />
             <p>{socialProfile.title}</p>
           </ExternalLink>
@@ -72,7 +75,10 @@ const KnowledgePanel = ({
       <h3>People also search for</h3>
       <div className={styles.similarPeopleWrapper}>
         {similarPeople.map((similarPerson) => (
-          <ExternalLink key={similarPerson.name} link={similarPerson.link}>
+          <ExternalLink
+            link={similarPerson.link}
+            key={`similar-person-${similarPerson.name}`}
+          >
             <div style={{ backgroundImage: `url(${similarPerson.image})` }} />
             <p>{similarPerson.name}</p>
           </ExternalLink>
