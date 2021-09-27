@@ -37,7 +37,7 @@ const projects = [
     description: (
       <>
         A Chrome extension to highlight users’ cursor and clicks seen by over
-        12,800+ unique users.
+        19,100+ unique users.
       </>
     ),
   },
